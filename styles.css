@@ -138,6 +138,7 @@ h2 { font-size: 1.65rem; margin-bottom: 8px; }
 .contact-price { margin: 14px 0 20px; }
 .contact-price strong { font-size: 1.9rem; font-weight: 800; color: #fff; }
 .contact-buttons { display: flex; flex-direction: column; gap: 12px; max-width: 420px; margin: 0 auto 26px; }
+.contact-card .btn-call { border: 2px solid var(--gold); }
 .inquiry { max-width: 480px; margin: 0 auto; text-align: left; }
 .inquiry h3 { color: #fff; font-size: 1.1rem; margin-bottom: 12px; text-align: center; }
 .inquiry input, .inquiry textarea {
