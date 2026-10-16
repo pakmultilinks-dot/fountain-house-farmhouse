@@ -3,9 +3,9 @@
    slot on the page updates automatically. */
 const PRICE = "Price on request";
 
-/* Promo video: if assets/farmhouse-promo-16x9.mp4 exists it plays in the
+/* Promo video: if assets/farmhouse-promo-16x9-web.mp4 exists it plays in the
    Virtual Tour section, otherwise a graceful placeholder stays visible. */
-const PROMO_VIDEO_SRC = "assets/farmhouse-promo-16x9.mp4";
+const PROMO_VIDEO_SRC = "assets/farmhouse-promo-16x9-web.mp4";
 
 const WA_NUMBER = "923146365550";
 const WA_DEFAULT_TEXT = "Assalam-o-Alaikum, I'm interested in The Fountain House farmhouse (25.5 kanal, Barki Road). Please share details.";
