@@ -64,32 +64,6 @@ document.querySelectorAll(".reveal").forEach(function (el) {
   revealObserver.observe(el);
 });
 
-/* Animated stat counters */
-function animateCount(el) {
-  var target = parseFloat(el.getAttribute("data-target"));
-  var decimals = parseInt(el.getAttribute("data-decimals") || "0", 10);
-  var dur = 1600, start = null;
-  function frame(ts) {
-    if (!start) start = ts;
-    var p = Math.min((ts - start) / dur, 1);
-    var eased = 1 - Math.pow(1 - p, 3);
-    var val = target * eased;
-    el.textContent = decimals ? val.toFixed(decimals) : Math.round(val).toLocaleString("en-US");
-    if (p < 1) requestAnimationFrame(frame);
-    else el.textContent = decimals ? target.toFixed(decimals) : Math.round(target).toLocaleString("en-US");
-  }
-  requestAnimationFrame(frame);
-}
-var countObserver = new IntersectionObserver(function (entries) {
-  entries.forEach(function (e) {
-    if (e.isIntersecting) {
-      animateCount(e.target);
-      countObserver.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.5 });
-document.querySelectorAll(".count").forEach(function (el) { countObserver.observe(el); });
-
 /* Gallery lightbox (real photos only) */
 var lightbox = document.getElementById("lightbox");
 var lbImg = document.getElementById("lbImg");

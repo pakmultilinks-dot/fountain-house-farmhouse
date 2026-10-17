@@ -487,3 +487,15 @@ a.contact-card:hover { transform: translateY(-4px); border-color: var(--gold); }
 @media (max-width: 560px) {
   .hero::after { display: none; }
 }
+
+/* ---------- dark-section consistency (declutter pass) ---------- */
+.section-dark .about-text p { color: rgba(248,244,234,0.88); }
+.section-dark .about-text strong { color: #ffffff; }
+.section-dark .loc-text p { color: rgba(248,244,234,0.88); }
+.section-dark .loc-list li { color: rgba(248,244,234,0.88); }
+.section-dark .loc-list li strong { color: #ffffff; }
+.section-dark .btn-outline-dark { border-color: var(--gold); color: var(--gold-light); }
+.section-dark .btn-outline-dark:hover { background: var(--gold); color: #0a2417; }
+.honest-note { background: linear-gradient(180deg, var(--green-950), var(--green-900)); border-top: 1px solid rgba(201,162,75,0.3); border-bottom: 1px solid rgba(201,162,75,0.3); }
+.honest-note p { color: rgba(248,244,234,0.85); }
+.honest-note strong { color: var(--gold-light); }
